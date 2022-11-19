@@ -226,6 +226,7 @@
                 // Do something for "enter" or "return" key press.
                 break;
             case "c":
+                keepToolSelected.set(false);
                 addConnection();
                 break;
             case "e":
@@ -314,6 +315,10 @@
                 startNode = node;
                 return;
             }
+        }
+
+        if ($keepToolSelected == false) {
+            selectedTool = PrimaryTool.Select;
         }
     }
 
