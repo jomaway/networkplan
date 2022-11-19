@@ -1,0 +1,23 @@
+body {
+  margin: 0px
+}
+
+:root {
+  --canvas-color: rgb(248, 249, 250);
+  --panel-color: #fefefe;
+  --panel-border: #fff;
+  --panel-hover: #e5e8e8;
+  --text: #333;
+  --primary-color: #f1c40f;
+  --error-color: #e74c3c;
+
+  --toastBorderRadius: 10px;
+}
+
+.error {
+  --toastBackground: var(--error-color);
+  --toastBarBackground: var(--error-color);
+  --toastBarHeight: 0;
+  --toastBorderRadius: 0.8rem;
+  --toastColor: var(--text)
+}
